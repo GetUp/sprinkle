@@ -122,9 +122,9 @@ module Sprinkle
           raise 'No build area defined' unless @options[:builds]
           raise 'No source download area defined' unless @options[:archives]
 
-          [ "mkdir -p #{@options[:prefix]}",
-            "mkdir -p #{@options[:builds]}",
-            "mkdir -p #{@options[:archives]}" ]
+          [ "sudo mkdir -p #{@options[:prefix]}",
+            "sudo mkdir -p #{@options[:builds]}",
+            "sudo mkdir -p #{@options[:archives]}" ]
         end
 
         def download_commands #:nodoc:
