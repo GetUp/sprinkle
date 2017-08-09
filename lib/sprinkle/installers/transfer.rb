@@ -130,8 +130,8 @@ module Sprinkle
         end
         
         def setup_rendering
-          ActiveSupport::Deprecation.warn("transfer :render is depreciated, please use the `file` installer now.")
-          ActiveSupport::Deprecation.warn("transfer :render will be removed from Sprinkle v0.8")
+          # ActiveSupport::Deprecation.warn("transfer :render is depreciated, please use the `file` installer now.")
+          # ActiveSupport::Deprecation.warn("transfer :render will be removed from Sprinkle v0.8")
           if @options[:render]
             raise "Incompatible combination of options :render and :tarball" if tarball?
             if @options[:locals]
