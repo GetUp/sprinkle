@@ -128,7 +128,7 @@ module Sprinkle
         end
 
         def download_commands #:nodoc:
-          [ "wget -cq -O '#{@options[:archives]}/#{archive_name}' #{@source}" ]
+          [ "sudo wget -cq -O '#{@options[:archives]}/#{archive_name}' #{@source}" ]
         end
 
         def extract_commands #:nodoc:
